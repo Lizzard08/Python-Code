@@ -1,4 +1,3 @@
-# Marta Sinistina
 # Dijkstra's Algorithm Program
 
 from sys import stdin, argv
