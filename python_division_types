@@ -1,0 +1,10 @@
+# Liz Nelson
+# Mod 1, Option 2
+# 5/18/22
+# This program inputs two integers from the user and returns integer, float, and modulo division solutions
+
+num1 = int(input('Enter first integer: '))
+num2 = int(input('Enter second integer: '))
+print('Integer division:',num1 // num2)
+print('Float division:',num1 / num2)
+print('Modulo division:',num1 % num2)
