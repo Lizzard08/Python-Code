@@ -1,0 +1,30 @@
+# Elizabeth Nelson
+# ITS320-2
+# 6/26/22
+# Program: Cartesian Product
+# This program creates two lists from user input and returns the Cartesian Product
+# of the two lists. Each list has no more than 10 elements and will force close if
+# more than 10 elements are inputed. 
+
+
+def cartesian_product(list_1, list_2):
+    cartesian_product = []
+    for x in list_1:
+        for y in list_2:
+            cartesian_product.append((x,y))
+    return cartesian_product
+
+first = input('Enter first list of numbers (no more than numbers): ')
+list_1 = first.split()
+if len(list_1) > 10:
+    print('List too long! Exiting program......')
+    quit()
+    
+
+second = input('Enter second list of numbers (no more than 10 numbers): ')
+list_2 = second.split()
+if len(list_2) > 10:
+    print('List too long! Exiting program......')
+    quit()
+
+print(cartesian_product(list_1, list_2))
