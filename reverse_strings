@@ -1,0 +1,18 @@
+# Liz Nelson
+# ITS320-2
+# 06/18/22
+# Program: String Values in Reverse
+# This program prompts the user for three strings and returns them concatenated in reverse order
+
+def concat_string_reverse(user_string1, user_string2, user_string3):
+    concat_string = user_string1 + user_string2 + user_string3
+    return concat_string[::-1]
+
+def main():
+    user_string_1 = input('Enter first string:')
+    user_string_2 = input('Enter second string:')
+    user_string_3 = input('Enter third string:')
+    print('Concatenation of string in reverse order:', end =' ')
+    print(concat_string_reverse(user_string_1, user_string_2, user_string_3))
+
+if __name__=="__main__": main()
