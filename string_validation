@@ -1,0 +1,56 @@
+# Liz Nelson
+# Mod2 Option 1 - String validation
+# ITS320-2
+# 05/25/22
+# This program takes in a String and returns True or False if the String contains at least one:
+# *Alphanumberic
+# *Alphabetic
+# *Digit
+# *Lowercase
+# *Uppercase
+
+success = False
+S = input()
+length = len(S)
+if length >= 51:
+    print('String is too long!')
+    
+# *Alphanumberic
+for x in S:
+    if (x.isalnum() == True):
+        success = True
+        break
+print(success)
+success = False
+
+# *Alphabetic
+for x in S:
+    if (x.isalpha() == True):
+        success = True
+        break
+print(success)
+success = False
+
+# *Digit
+for x in S:
+    if (x.isdigit() == True):
+        success = True
+        break
+print(success)
+success = False
+
+# *Lowercase
+for x in S:
+    if (x.islower() == True):
+        success = True
+        break
+print(success)
+success = False
+
+# *Uppercase
+for x in S:
+    if (x.isupper() == True):
+        success = True
+        break
+print(success)
+
