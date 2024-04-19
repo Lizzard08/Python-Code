@@ -1,0 +1,29 @@
+# Liz Nelson
+# 6/11/22
+# ITS320-2 Mod 4_1
+# This program asks the user for 5 floating-point values and returns the total, average, max, min, and
+# interest at 20%
+
+count = 0
+total = 0
+nums = []
+
+# Loop to prompt user for 5 values
+while count < 5:
+    num = float(input('Enter a number:'))
+    nums.append(num)
+    total += num
+    count += 1
+    
+maximum = max(nums)
+minimum = min(nums)
+
+# Return values to user
+print()    
+print('The total of the values entered is', total)
+print('The average of the values entered is', total/5)
+print('The maximum value entered is', maximum)
+print('The minimum value entered is', minimum)
+
+for i in range(len(nums)):
+    print('Value', nums[i] ,'plus 20% interest is', (nums[i] + (nums[i] * 0.2)))
